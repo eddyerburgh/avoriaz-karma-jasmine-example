@@ -1,6 +1,6 @@
-# avoriaz-karma-mocha-example
+# avoriaz-karma-jasmine-example
 
-> An example project using avoriaz, karma and mocha to run tests
+> An example project using avoriaz, karma and jasmine to run tests
 
 ## Build Setup
 
