@@ -9,7 +9,12 @@
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
-    "lint:fix": "eslint --ext .js,.vue src test/unit/specs --fix"
+    "lint:fix": "standard --env mocha --fix"
+  },
+  "standard": {
+    "ignore": [
+      "build/**/*"
+    ]
   },
   "dependencies": {
     "vue": "^2.1.0"
@@ -61,6 +66,7 @@
     "shelljs": "^0.7.4",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
+    "standard": "^10.0.2",
     "url-loader": "^0.5.7",
     "vue-loader": "^10.0.0",
     "vue-style-loader": "^1.0.0",
